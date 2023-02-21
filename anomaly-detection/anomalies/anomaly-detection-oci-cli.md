@@ -19,7 +19,7 @@ In this lab session, we will show how to use OCI CLI tools to call our services.
 * Familiar with local editing IDEs, such as VS Code or Sublime, etc
 * Familiar with Linux editing tools, such as vi, or nano
 
-## TASK 1: Setup API Signing Key
+## Task 1: Setup API Signing Key
 
 We need to generate proper authentication configuration (API Signing Key pair) in order to use OCI CLI to communicate properly to the services on your behalf.
 
@@ -57,7 +57,7 @@ key_file=<path to your private keyfile> # TODO</copy>
 
 To know more about API key and config file, please visit [Generating API KEY](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/apisigningkey.htm) and [SDK and CLI Configuration File](https://docs.oracle.com/en-us/iaas/Content/API/Concepts/sdkconfig.htm#SDK_and_CLI_Configuration_File)
 
-## TASK 2: Activate Cloud Shell with Configuration
+## Task 2: Activate Cloud Shell with Configuration
 
 ### 1. Get permission to Use Cloud shell
 
@@ -82,8 +82,11 @@ On the Cloud Shell, type the following command to create `.oci` folder and Enter
 <copy>mkdir .oci</copy>
 ```
 
-Now, upload the `oci-api-key.pem` file you generated and downloaded earlier to the Cloud Shell host.
+On the right side select the gear icon to reveal a drop down menu. Press the upload button.
 ![](../images/cloud-shell-upload-pem.png " ")
+
+Now, upload the `oci-api-key.pem` file you generated and downloaded earlier to the Cloud Shell host.
+![](../images/cloud-shell-upload-pem-created.png " ")
 
 Once it is uploaded, it may landed in the home folder, you can move it to the `.oci` folder with the following command and change it permission to be accessible by owner ONLY:
 ```
@@ -107,7 +110,7 @@ chmod 600 .oci/config </copy>
 The final structure of `.oci` folder will be like this:
 ![](../images/cloud-shell-oci-folder.png " ")
 
-## TASK 3: Execute OCI Anomaly Detection Commands
+## Task 3: Execute OCI Anomaly Detection Commands
 
 ### 1. Try the main anomaly-detection command
 ```
